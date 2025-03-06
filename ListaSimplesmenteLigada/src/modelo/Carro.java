@@ -3,13 +3,13 @@ package modelo;
 public class Carro {
     private int id;
     private String modelo;
-    private String ano;
-    private static int contador = 1;
+    private int ano;
+    private static int contador = 0;
 
-    public Carro (int id, String modelo, String ano){
-        this.id = id;
+    public Carro (String modelo, int ano){
         this.modelo = modelo;
         this.ano = ano;
+        this.id = contador++;
     }
 
     public int getId() {
@@ -20,11 +20,11 @@ public class Carro {
         this.id = id;
     }
 
-    public String getAno() {
+    public int getAno() {
         return ano;
     }
 
-    public void setAno(String ano) {
+    public void setAno(int ano) {
         this.ano = ano;
     }
 
