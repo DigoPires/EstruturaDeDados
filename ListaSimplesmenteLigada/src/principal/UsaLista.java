@@ -16,7 +16,7 @@ public class UsaLista {
 
         lista.exibir();
         
-        // boolean teste = lista.remover(3);
+        // boolean teste = lista.remover(id);
         // System.out.println("\n==== Removendo ====");
         // if(teste){
         //     lista.exibir();
