@@ -80,7 +80,7 @@ public class Lista {
         return false;
     }
 
-    public void atualizar(int id){
-        
+    public void atualizar(int id, int ano){
+
     }
 }
