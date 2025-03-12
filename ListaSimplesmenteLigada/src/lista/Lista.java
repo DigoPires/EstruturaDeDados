@@ -74,13 +74,19 @@ public class Lista {
                 refAnterior.setProx(ref.getProx());
                 ref.setProx(null);
             }
-            return true;
+            // return true;
         }
 
         return false;
     }
 
-    public void atualizar(int id, int ano){
+    public boolean atualizar(int id, int ano){
+        Carro carro = pesquisar(id);
+        if(carro != null){
+            carro.setAno(ano);
+            return true;
+        }
 
+        return false;
     }
 }
